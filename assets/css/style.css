@@ -1,0 +1,789 @@
+:root{
+	--blue: #2E3192;
+}
+.bg-blue{
+	background-color: var(--blue);
+}
+.text-blue{
+	color: var(--blue) !important;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #383838;
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+i,
+img{
+	transition: all 0.5s ease 0s;
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus{
+	outline: none;
+	box-shadow: none !important;
+}
+section{
+	padding: 80px 0; 
+}
+.btn:hover{
+	color: #fff;
+}
+.text{
+	font-size: 14px;
+	line-height: 24px;
+}
+.sec-heading{
+	padding-bottom: 30px;
+}
+.sec-heading h2{
+	font-size: 36px;
+	font-weight: 300;
+	color: #414042;
+}
+.sec-heading h2 strong{
+	font-weight: bold;
+}
+/*====================================================================
+=====================================================================
+||||||||||||||||||||\\ CLASS CSS (START) //||||||||||||||||||||||
+==================================================================
+==============================================================*/
+
+
+
+
+
+
+
+
+
+/*====================================================================
+=====================================================================
+||||||||||||||||||||\\ HEADER CSS (START) //||||||||||||||||||||||
+==================================================================
+==============================================================*/
+.topbar-contact li{
+	display: inline-block;
+}
+.topbar-contact li a:hover{
+	color: #b2b2b2;
+}
+.header-top{
+	padding: 10px 0;
+}
+.topbar-contact li,
+.topbar-contact li a{
+	color: var(--blue);
+}
+.topcontact-icor{
+	margin: 0 5px;
+}
+.logo{
+	width: 140px;
+}
+.header .nav-link{
+	color: #8c8c8c;
+	text-transform: uppercase;
+	position: relative;
+	padding: 0 !important;
+	margin: 0 12px;
+}
+.header .nav-link:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	right: 0;
+	height: 2px;
+	background-color: var(--blue);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+}
+.header .nav-link:hover:before{
+	visibility: visible;
+	opacity: 1;
+}
+.nav-link.active:before{
+	opacity: 1;
+	visibility: visible;
+}
+.dropdown-item.active{
+	background-color: var(--blue);
+	color: #fff !important;
+}
+.fixed .logo{
+	width: 100px;
+}
+.fixed{
+	position: fixed !important;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	animation: 1s scrolll 1 alternate; 
+	transition: all 0.5s ease 0s; 
+	background-color: #fff;
+	padding: 8px 16px;
+	box-shadow: 4px 11px 17px -3px rgba(0,0,0,0.3) !important;
+}
+@keyframes scrolll{
+	from{
+		transform: translateY(-80px);
+	}
+}
+.header .header_bottom .dropdown-menu{
+	display: inline-block;
+	visibility: hidden;
+	margin: 0;
+	opacity: 0;
+	transition: all 0.5s ease 0s;
+	border:0;
+	box-shadow: 2px 1px 7px 1px rgba(0,0,0,0.1);
+	padding: 0;
+	top: 50px;
+	width: 180px;
+}
+.header .header_bottom .dropdown:hover .dropdown-menu{
+	visibility: visible;
+	opacity: 1;
+	top: 40px;
+}
+.header .header_bottom .dropdown-menu .dropdown-item{
+	text-transform: uppercase;
+	margin: 0px 0;
+	padding: 8px 15px;
+	border-bottom: 1px solid #efefef;
+	color: #838383;
+	font-size: 14px; 
+	white-space: normal;
+} 
+.header .header_bottom .dropdown-menu .dropdown-item:hover{
+	background-color: var(--blue);
+	color: #fff;
+}
+.header .header_bottom .dropdown-menu li:last-child .dropdown-item{
+	border-bottom: 0;
+}
+/*====================================================================
+=====================================================================
+||||||||||||||||\\ BANNER-TOP-BOXX CSS (START) //|||||||||||||||||
+==================================================================
+==============================================================*/
+.banner-top-box{
+	z-index: 999;
+}
+.banner-top-box .col-lg-4{
+	padding: 0 10px;
+}
+.top-boxss p{
+	margin: 10px 0 20px 0; 
+}
+.top-boxss{
+	padding: 20px 20px;
+	height: 100%;
+	color: #fff;
+	position: relative;
+	z-index: 9;
+	background-color: var(--blue);
+	border-radius: 5px;
+}
+/*.top-boxss:before{
+	content: "";
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}*/
+/*.service-boxss{
+	background-image: url(../images/service.jpg); 
+}
+.blog-boxss{
+	background-image: url(../images/blog.jpg); 
+}
+.about-boxss{
+	background-image: url(../images/about.png); 
+}*/
+.top-boxss h3{
+	font-size: 25px;
+	color: #fff;
+}
+.simple-btn-bg{
+	background-color: var(--blue);
+	border: 1px solid #fff;
+	border-radius: 0;
+	color: #fff;
+}
+.simple-btn-bg:hover{
+	background-color: transparent;
+	color: #000;
+	border-color: var(--blue);
+}
+.simple-btn{
+	border: 1px solid #fff;
+	border-radius: 0;
+	color: #fff;
+}
+.simple-btn:hover{
+	background-color: var(--blue);
+	color: #fff;
+}
+/*====================================================================
+=====================================================================
+||||||||||||||||||||\\ BANNER CSS (START) //||||||||||||||||||||||
+==================================================================
+==============================================================*/
+#slider{
+	margin-bottom: -100px;
+}
+#slider .carousel-caption{
+	top: 25px;
+	text-align: left;
+	left: 13.5%;	
+}
+#slider .carousel-caption .text{
+	margin: 20px 0;
+}
+#slider .carousel-caption h1{
+	font-weight: bold;
+	font-size: 50px; 
+	margin-top: 10px;
+}
+#slider .carousel-caption span{
+	color: #ddd;
+	border-bottom: 1px solid #fff;
+}
+.carousel-inner{
+	height: 550px;
+}
+.carousel-inner img{
+	height: 550px;
+}
+.carousel-item{
+	position: relative;
+}
+.carousel-item:before{
+	content: "";
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+/*====================================================================
+=====================================================================
+|||||||||||||||\\ HOME BLOG CSS (START) //||||||||||||||||||||||
+==================================================================
+==============================================================*/
+.home-blog .simple-btn-bg{
+	padding: 10px 51px;
+    font-size: 21px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.sm-blog-box{
+	margin-top: 20px;
+}
+.smoblog-box-img{
+	margin-bottom: 15px;
+}
+.sm-blog-box-info{
+	background-color: #F9F9F9;
+	padding: 15px 20px 25px;
+}
+.sm-blog-date-box{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.sm-blog-box-info .simple-btn{
+	background-color: var(--blue);
+}
+.sm-blog-box-info .simple-btn:hover{
+	border-color: var(--blue);
+	background-color: transparent;
+	color: var(--blue);
+}
+.sm-blog-box-info.lts-news{
+	margin-top: 20px;
+}
+.sm-blog-box-info.lts-news h3{
+	font-size: 20px;
+	line-height: 33px; 
+}
+.sm-blog-box a{
+	margin-top: 20px;
+}
+/*====================================================================
+=====================================================================
+|||||||||||||||||||||\\ FOOTER CSS (START) //||||||||||||||||||||||
+==================================================================
+==============================================================*/
+.footer{
+	background-color: #363839;
+	padding: 60px 0;
+}
+.footer-bottom{
+	background-color: #2F3232;
+	padding: 20px 0;
+	margin-top: 60px;
+}
+.copyright p{
+	color: #fff;
+}
+.footer-block-head{
+	padding-bottom: 20px;
+}
+.footer-block-head h4{
+	color: #fff;
+}
+.footer-block-info ul{
+	color: #fff;
+}
+.footer-block-info ul li{
+	margin: 10px 0;
+	position: relative;
+	padding-left: 35px;
+}
+.footer-block-info ul li i{
+	left: 0;
+	top: 4px;
+	margin-right: 15px;
+	position: absolute;
+}
+.footer-block-info ul li p{
+	display: -webkit-box;
+	margin: 0; 
+}
+.footer-menu a{
+	color: #fff;
+	display: block;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	padding: 5px 0 8px 0;
+}
+
+.footer-menu a:hover{
+	border-bottom-color: var(--blue); 
+}
+#top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+    background-color: var(--blue);
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 37px;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+#top.show {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+}
+#top i {
+    animation: 0.3s topbottom infinite alternate;
+}
+@keyframes topbottom {
+	to{
+		transform: translateY(-5px);
+	}
+	form{
+		transform: translateY(5);
+	}
+}
+.footer-icon li{
+	display: inline-block;
+}
+.footer-icon li a{
+	color: #fff;
+	font-size: 16px;
+	width: 35px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	margin: 0 5px;
+	height: 35px;
+	background-color: var(--blue);
+}
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+||||||||||||||||||||||||||||||||| ABOUT PAGE CSS |||||||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+
+/*====================================================================
+=====================================================================
+|||||||||||||||||||||\\ ABOUT PAGE TITLE CSS (START) //|||||||||||||||
+==================================================================
+==============================================================*/
+.page-title-sec{
+	background-color: var(--blue);
+	padding: 30px 0;
+}
+.page-title-head h3{
+	color: #fff;
+	font-size: 35px;
+}
+.back-top-home ul li a{
+	color: #fff;
+}
+.back-top-home ul li{
+	display: inline-block;
+}
+/*====================================================================
+=====================================================================
+|||||||||||||\\ ABOUT PAGE About Lachman CSS (START) //|||||||||||||||
+==================================================================
+==============================================================*/
+.about-page-lachman{
+	background-image: url(../images/aboutpage.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.about-pag-cli p{
+	margin: 10px 0;
+}
+.cli-big-btn{
+	background-color: var(--blue);
+    color: #fff;
+    padding: 12px 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.cli-about-info{
+	list-style: unset;
+	padding-left: 15px; 
+}
+.cli-about-info li{
+	margin: 10px 0;
+}
+/*====================================================================
+=====================================================================
+|||||||||||\\ ABOUT PAGE ABOUT CLI LIDT CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.about-cli-list{
+	background-color: #EDF4F6;
+}
+.about-cli-list .btn-group button.nav-link{
+	border: 1px solid var(--blue);
+	background-color: transparent;
+	color: var(--blue);
+	padding: 15px 0;
+}
+.about-cli-list .btn-group button.nav-link.active{
+	background-color: var(--blue);
+}
+.about-cli-list .tab-content .tab-pane{
+	background-color: #707070;
+	padding: 10px 20px;
+	color: #fff;
+}
+
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+||||||||||||||||||||||||||||||||| SERVICE PAGE CSS |||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+
+/*====================================================================
+=====================================================================
+|||||||||||\\ SERVICE PAGE SERVICE BANNER CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.service-banner{
+	background-image: url(../images/map.jpg);
+}
+/*====================================================================
+=====================================================================
+|||||||||||\\ SERVICE PAGE SERVICE COMPRE CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.service-box{
+	padding: 20px;
+	overflow: hidden;
+	box-shadow: 2px 1px 7px 1px rgba(0,0,0,0.1);
+	height: 100%;
+	transition: all 0.5s ease 0s;
+}
+.service-box-img-info img{
+	width: 230px;
+	margin-bottom: 20px;
+}
+.service-overlay h3,
+.service-box-img-info h3{
+	font-size: 20px;
+	color: var(--blue);
+	font-weight: bold;
+}
+.service-overlay p{
+	margin: 10px 0;
+}
+.service-overlay{
+	background-color: var(--blue);
+	position: absolute;
+	padding: 23px 10px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform: scale(0);
+	transition: all 0.5s ease 0s;
+	opacity: 0;
+	visibility: hidden;
+}
+.service-box:hover .service-overlay{
+	transform: scale(1);
+	visibility: visible;
+	opacity: 1;
+}
+.service-box-row{
+	margin-top: 30px;
+}
+.service-overlay .simple-btn{
+	margin-top: 15px;
+}
+.service-overlay .simple-btn:hover{
+	background-color: #fff;
+	color: var(--blue);
+}
+
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+||||||||||||||||||||||||||||||||| Practice Groups PAGE CSS |||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+
+/*====================================================================
+=====================================================================
+|||||||||||\\ VISION PAGE VISION CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.vision-box {
+    padding: 25px 30px;
+    box-shadow: 2px 1px 7px 1px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.vision-box:last-child{
+	margin-bottom: 0;
+}
+.vision-box p{
+	margin: 10px 0; 
+}
+
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+||||||||||||||||||||||||||||||||||||| Blgo PAGE CSS |||||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+/*====================================================================
+=====================================================================
+|||||||||||\\ BLOG PAGE LTEST_BLOG CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.blog-page-blog-box{
+	box-shadow: 4px 11px 17px -3px rgba(0,0,0,0.1) !important;
+	margin-bottom: 30px;
+}
+.blog-page-blog-box .card-title a{
+	font-size: 22px;
+}
+
+.latest-blog .page-link{
+	border-radius: 0 !important;
+	border: 1px solid var(--blue);
+	margin: 0 5px;
+	color: var(--blue);
+}
+.latest-blog .page-link:hover{
+	background-color: var(--blue);
+	color: #fff;
+}
+.latest-blog .row .col-lg-12 .blog-page-blog-box:last-child{
+	margin-bottom: 0;
+}
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+||||||||||||||||||||||||||||||||||||| News PAGE CSS |||||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+/*====================================================================
+=====================================================================
+|||||||||||\\ NEWS PAGE NEWS CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.latest_news .sm-blog-date-box span{
+	margin-top: 10px;
+	display: inline-block;
+}
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+||||||||||||||||||||||||||||||||||||| Brochures PAGE CSS |||||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+/*====================================================================
+=====================================================================
+|||||||||||\\ Resources PAGE Brochures CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.brochures-box-info h2{
+	font-size: 20px;
+	margin: 20px 0;
+}
+.brochures-box a{
+	border-radius: 5px;
+	padding: 15px 50px;
+	display: block;
+}
+.brochures-box{
+	margin-bottom: 30px;
+}
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+||||||||||||||||||||||||||||||||||||| Contact PAGE CSS |||||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+/*====================================================================
+=====================================================================
+|||||||||||\\ Resources PAGE CONTACT CSS (START) //||||||||||||
+==================================================================
+==============================================================*/
+.contact-form .simple-btn-bg{
+	padding: 10px 40px;
+}
+.contact-form{
+	background-color: #F9F9F9;
+}
+.contact-icon-block{
+	box-shadow: 2px 1px 7px 1px rgba(0,0,0,0.1);
+	padding: 30px;
+	text-align: center;
+}
+.contact-icon-block i{
+	font-size: 50px;
+	color: var(--blue);
+	margin-bottom: 20px; 
+}
+.contact-icon-block p{
+	font-size: 20px;
+}
+.contact-map{
+	line-height: 0;
+}
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+|||||||||||||||||||||||||||||| Service More PAGE CSS ||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+.service-fda{
+	background-color: #EDF4F6;
+}
+.fda-pro-box{
+	box-shadow: 2px 1px 7px 1px rgba(0,0,0,0.1);
+	/*border: 1px solid var(--blue);*/
+	padding: 20px 40px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: #fff;
+}
+.service-fda .row .col-lg-10:last-child .fda-pro-box{
+	margin-bottom: 0;
+}
+.fda-pro-box .text{
+	padding: 20px 0;
+}
+#mymodal{
+	z-index: 9999;
+}
+#mymodal .modal-header{
+	border-bottom: 1px solid #000;
+}
+.service-due ul,
+#mymodal .modal-body ul{
+	list-style: unset;
+	padding-left: 15px;
+	margin: 10px 0;
+}
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+|||||||||||||||||||||||||||||| Blog In PAGE CSS ||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+.blogin-page-box-info .card-body p{
+	margin-top: 10px;
+}
+.blogin-page-bottom-icon{
+	margin-top: 20px;
+}
+/*==================================================================================
+=====================================================================================
+===========================================================================================
+|||||||||||||||||||||||||||||| Servise Due PAGE CSS ||||||||||||||||||||||||||||||||||
+========================================================================================
+=====================================================================================
+=======================================================================================*/
+.service-due h6{
+	margin: 15px 0 30px;
+}
+.service-inner-head{
+	font-size: 20px;
+	color: var(--blue);
+	font-weight: bold;
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgb(147, 147, 147);
+}
+.service-iner-block-list{
+	margin-top: 30px;
+}

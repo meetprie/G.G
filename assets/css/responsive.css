@@ -1,0 +1,145 @@
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	section{
+		padding: 60px 0;
+	}
+	.header .header_bottom .dropdown-menu.show{
+		display: block !important;
+	    opacity: 1;
+	    visibility: visible;
+	    width: 100%;
+	    box-shadow: none;
+	    margin-left: 16px;
+	}
+	.about-page-clint-sec .row .row .col-lg-4:first-child .about-pag-cli{
+		margin-top: 0;
+	}
+	.about-pag-cli{
+		margin-top: 30px;
+	}
+	.header .header_bottom .dropdown-menu{
+		display: none;
+	}
+	.header .header_bottom .nav-link{
+		padding: 2px 0 !important;
+	}
+	.header .header_bottom .nav-link:before{
+		display: none;
+	}
+	#slider{
+		margin: 0;
+	}
+	#slider .carousel-caption h2{
+		font-size: 24px;
+		line-height: 34px;
+	}
+	#slider .carousel-caption h1{
+		font-size: 36px;
+	}
+	#slider .carousel-caption .text{
+		margin-top: 10px;
+		font-size: 14px;
+	}
+	.carousel-inner{
+		height: 396px;
+	}
+	.carousel-inner img{
+		height: 396px;
+	}
+	.banner-top-box .col-lg-4{
+		padding: 0 15px;
+	}
+	.blog-boxss{
+		height: 281px;
+	}
+	.logo{
+		width: 120px;
+	}
+	.about-cli-list .btn-group button.nav-link{
+		margin: 5px;
+	}
+	.service-box-row .col-lg-4:last-child .service-box{
+		margin-top: 30px;
+	}
+	.vision-block .col-lg-4:last-child .vision-box{
+		margin-top: 30px;
+	}
+	.contact-form-icon .col-lg-4:last-child .contact-icon-block{
+		margin-top: 30px;
+	}
+}
+@media (max-width: 768px) {
+	.service-box-row{
+		margin: 0;
+	}
+	.service-box{
+		height: auto;
+		margin: 30px 0 0 0 !important;
+	}
+	.top-boxss{
+		margin-bottom: 30px;
+		height: auto;
+	}
+	.banner-top-box .col-lg-4:last-child .top-boxss{
+		margin-bottom: 0;
+	}
+	#slider .carousel-caption h1{
+		font-size: 30px;
+		margin: 5px 0 5px 0;
+	}
+	#slider .carousel-caption .text{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	#slider .carousel-caption h2{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.about-page-clint-sec .row:first-child .col-lg-6{
+		margin-top: 30px;
+	}
+}
+@media (max-width: 576px) {
+	section{
+		padding: 40px 0;
+	}
+	.sec-heading h2{
+		font-size: 28px;
+	}
+	#slider .carousel-caption h1{
+		font-size: 30px;
+		margin: 5px 0 5px 0;
+	}
+	.carousel-inner{
+		height: 60vh;
+	}
+	#slider .carousel-caption h2{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	#slider .carousel-caption .text{
+		margin-top: 0;
+		line-height: 20px;
+		display: none;
+	}
+	.carousel-inner{
+		height: 50vh;
+	}
+	.footer-block-box{
+		margin-bottom: 30px;
+	}
+	.about-cli-list .btn-group button.nav-link{
+		font-size: 14px;
+	}
+	.page-title-sec .back-top-home,
+	.page-title-sec{
+		text-align: center !important;
+	}
+	.page-title-head h3{
+		font-size: 18px;
+	}
+}
+
+
